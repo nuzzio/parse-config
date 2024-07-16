@@ -3,14 +3,9 @@ kind: workflow
 name: My workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      inputs_a:
-        required: false
-        default: thisisatest
-      inputs_b:
-        required: true
-        type: number
+  push:
+    branches:
+      - '**'
 
 
 jobs:
