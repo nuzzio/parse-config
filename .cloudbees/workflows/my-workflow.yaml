@@ -6,6 +6,16 @@ on:
   push:
     branches:
       - '**'
+  
+  workflow_dispatch:
+    inputs:
+      inputs_a:
+        required: false
+        default: thisisatest
+      inputs_b:
+        required: true
+        type: number
+
 
 jobs:
   build:
